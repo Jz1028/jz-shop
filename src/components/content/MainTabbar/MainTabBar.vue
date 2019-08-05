@@ -24,8 +24,8 @@
 </template>
 
 <script>
-  import TabBar from '_c/tabbar/TabBar'
-  import TabBarItem from '_c/tabbar/TabBarItem'
+  import TabBar from '_c/common/TarBar/TabBar'
+  import TabBarItem from '_c/common/TarBar/TabBarItem'
 
   export default {
     name: "MainTabBar",

@@ -1,24 +1,27 @@
 <template>
-	<div id="app">
-		<router-view></router-view>
-		<main-tab-bar/>
-	</div>
+  <div id="app">
+    <keep-alive>
+      <router-view/>
+    </keep-alive>
+    <main-tab-bar class="main-tab-bar"/>
+  </div>
 </template>
 
 <script>
-	import MainTabBar from '_c/mainTabbar/MainTabBar'
+  import MainTabBar from '_c/content/MainTabbar/MainTabBar'
 
-	export default {
-		name: 'App',
-		components: {
-			MainTabBar
-		},
-		mounted() {
-			console.log(process.env.NODE_ENV);
-		}
-	}
+  export default {
+    name: 'App',
+    components: {
+      MainTabBar
+    }
+  }
 </script>
 
 <style>
-	@import "~_css/base.css";
+  @import "assets/css/base.css";
+
+  .main-tab-bar {
+    z-index: 999;
+  }
 </style>

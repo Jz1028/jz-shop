@@ -47,5 +47,3 @@ class HttpRequest {
 
 }
 export default HttpRequest
-e
-e
